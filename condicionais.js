@@ -1,54 +1,108 @@
-/* let numero = prompt ("Digite um numero:");
 
-if (numero > 0) {
+function exercicio01() {
 
-    console.log("Positivo.");
-} else {
-    
-    if (numero < 0){
+    let idade = prompt("Digite sua idade")
 
-        console.log("Negativo.");   
-    }else {
+    if (idade >= 18) {
 
-        consolelog("É zero.")
+        alert("Maior de idade")
+
+    } else {
+
+        alert("Menor de idade")
     }
-} */
+}
 
-    /* let numero = prompt ("Digite um número para verificar se é par ou ímpar: ")
+function exercicio02() {
 
-    if ( numero %2==0){
+    let numero = prompt("Digite o número")
+    if (numero >= 0) {
+        alert("Positivo")
 
-        console.log ("O número é par")
-    }else {
-        console.log("o número é ímpar")
-    } */
+    } else {
+        alert("Negativo")
+    }
+}
+
+function exercicio03() {
+    let nota = prompt("Digite sua nota")
+
+    if (nota >= 60) {
+
+        alert("Aprovado")
+    } else {
+
+        alert("Reprovado")
+    }
+}
+
+function exercicio04() {
+
+    let numero = prompt("Digite um numero:");
+
+    if (numero > 0) {
+
+        alert("Positivo.");
+    } else {
+
+        if (numero < 0) {
+
+            alert("Negativo.");
+        } else {
+
+            alert("É zero.")
+        }
+    }
+}
+
+function exercicio05() {
 
 
-    /* let idade = prompt ("Digite sua idade")
+    let idade = prompt("Digite sua idade")
 
-    if (idade >= 18){
+    if (idade >= 0 && idade <= 12) {
 
-        console.log ("Maior de idade")
+        alert("Crianca")
 
-    } else{
+    } else if (idade >= 13 && idade <= 17) {
 
-        console.log("Menor de idade")
-    } */
+        alert("Adolescente")
 
-/* 
-        let idade = prompt ("Digite sua idade")
+    } else {
 
-        if (idade >=0 && idade<=12){
+        alert("Adulto")
+    }
+}
 
-            console.log ("Crianca")
 
-        } else if (idade >=13 && idade <=17){
+function exercicio06() {
 
-            console.log("Adolescente")
+    let numero = prompt("Digite um número para verificar se é par ou ímpar: ")
 
-        }else{
+    if (numero % 2 == 0) {
 
-            console.log ("Adulto")
-        } */
+        alert("O número é par")
+    } else {
+        alert("o número é ímpar")
+    }
+}
 
-            let nota = prompt ("Digite sua nota")
+debugger
+function exercicio01int() {
+
+    let numero = Number(prompt("Digite o primeiro numero"))
+    let numero02 = Number(prompt("Digite o segundo numero"))
+    let operacao = prompt("Digite o operador")
+
+    if (operacao === "+") {
+        alert(numero + numero02)
+    } else if (operacao === "-") {
+        alert(numero - numero02)
+    } else if (operacao === "*") {
+        alert(numero * numero02)
+    } else if (operacao === "/") {
+        alert(numero / numero02)
+    }
+}
+
+exercicio02int
