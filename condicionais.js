@@ -97,7 +97,7 @@ function exercicio01int() {
     if (operacao === "+") {
         alert(numero + numero02)
     } else if (operacao === "-") {
-        alert(numero - numero02)
+        alert(numero - numero)
     } else if (operacao === "*") {
         alert(numero * numero02)
     } else if (operacao === "/") {
@@ -105,4 +105,17 @@ function exercicio01int() {
     }
 }
 
-exercicio02int
+function exercicio02int(){
+
+    let valor = prompt ("Qual o valor da compra?")
+    let desconto = (10)
+
+    if (valor >=10){
+
+        alert ( valor - desconto)
+
+    } else {
+
+        alert (valor)
+    }
+}
