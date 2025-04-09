@@ -1,23 +1,9 @@
-function exemploFor() {
+function exemplocontagem() {
     for (let contador = 1; contador <= 5; contador++) {
         alert(contador);
     }
 }
 
-function exemplodowhile() {
-    let contador = 1;
-
-    do {
-        console.log(contador);
-        contador++;
-    } while (contador <= 5);
-}
-
-function basic01() {
-    for (let contador = 1; contador <= 10; contador++) {
-        alert(contador);
-    }
-}
 
 function exemplotabuada(){
     let numero = (prompt("Digite um número para ver a tabuada:"));
@@ -39,7 +25,7 @@ console.log(`A soma dos primeiros ${n} números naturais é: ${soma}`);
 }
 
 
-function exercicioint01(){
+function exercicioint001(){
     let numero = (prompt("Digite o número"));
     
      for (let i = 2; i <= 50; i+=2) {
@@ -48,4 +34,14 @@ function exercicioint01(){
             
         }
     }
-exercicioint01();
+
+    function exercicioint002(){
+
+    let num = (prompt("Digite um número:"));
+while (num >= 0) {
+  console.log(num);
+  num--;
+  }
+}
+
+  exercicioint002();
