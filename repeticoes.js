@@ -44,4 +44,25 @@ while (num >= 0) {
   }
 }
 
-  exercicioint002();
+  
+
+function jogoAdivinhacaoSimples() {
+  const numeroSecreto = Math.floor(Math.random() * 100) + 1;
+  let palpite;
+
+  while (palpite !== numeroSecreto) {
+    palpite = parseInt(prompt("Adivinhe o número entre 1 e 100:"));
+
+    if (isNaN(palpite)) {
+      alert("Por favor, digite um número válido.");
+    } else if (palpite < numeroSecreto) {
+      alert("O número é maior.");
+    } else if (palpite > numeroSecreto) {
+      alert("O número é menor.");
+    }
+  }
+
+  alert(`Parabéns! Você acertou. O número era ${numeroSecreto}.`);
+}
+
+ jogoAdivinhacaoSimples();
