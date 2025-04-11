@@ -1,5 +1,5 @@
 
-function exercicio01() {
+function exercicioCondicionais01() {
 
     let idade = prompt("Digite sua idade")
 
@@ -13,7 +13,9 @@ function exercicio01() {
     }
 }
 
-function exercicio02() {
+gerarLog("Exercício de notas executado às " + new Date().toLocaleString());
+
+function exercicioCondicionais02() {
 
     let numero = prompt("Digite o número")
     if (numero >= 0) {
@@ -24,7 +26,9 @@ function exercicio02() {
     }
 }
 
-function exercicio03() {
+gerarLog("Exercício de positivo e negativo executado às " + new Date().toLocaleString());
+
+function exercicioCondicionais03() {
     let nota = prompt("Digite sua nota")
 
     if (nota >= 60) {
@@ -36,7 +40,11 @@ function exercicio03() {
     }
 }
 
-function exercicio04() {
+gerarLog("Exercício de aprovação executado às " + new Date().toLocaleString());
+
+
+
+function exercicioCondicionais04() {
 
     let numero = prompt("Digite um numero:");
 
@@ -55,7 +63,9 @@ function exercicio04() {
     }
 }
 
-function exercicio05() {
+gerarLog("Exercício de posito, negativo e zero executado às " + new Date().toLocaleString());
+
+function exercicioCondicionais05() {
 
 
     let idade = prompt("Digite sua idade")
@@ -74,8 +84,10 @@ function exercicio05() {
     }
 }
 
+gerarLog("Exercício de maturidade executado às " + new Date().toLocaleString());
 
-function exercicio06() {
+
+function exercicioCondicionais06() {
 
     let numero = prompt("Digite um número para verificar se é par ou ímpar: ")
 
@@ -87,8 +99,10 @@ function exercicio06() {
     }
 }
 
-debugger
-function exercicio01int() {
+gerarLog("Exercício de ímpar ou par executado às " + new Date().toLocaleString());
+
+
+function exercicioInt01() {
 
     let numero = Number(prompt("Digite o primeiro numero"))
     let numero02 = Number(prompt("Digite o segundo numero"))
@@ -105,6 +119,8 @@ function exercicio01int() {
     }
 }
 
+gerarLog("Exercício de operação executado às " + new Date().toLocaleString());
+
 function exercicio02int(){
 
     let valor = prompt ("Qual o valor da compra?")
@@ -118,4 +134,19 @@ function exercicio02int(){
 
         alert (valor)
     }
+}
+
+gerarLog("Exercício de desconto executado às " + new Date().toLocaleString());
+
+function gerarLog (textoDoLog) {
+
+    let logsContainer = document.querySelector(".logs-container");
+
+    let paragraph = document.createElement ("p");
+
+    paragraph.innerHTML = textoDoLog;
+
+    logsContainer.appendChild(paragraph);
+
+
 }
